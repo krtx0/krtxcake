@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Basket | Luxury Artisan Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FFF8F0',
+                        chocolate: '#3A2D32',
+                        blush: '#F5E6E8',
+                        gold: '#D4AF37'
+                    },
+                    fontFamily: {
+                        heading: ['"Playfair Display"', 'serif'],
+                        body: ['"Open Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-cream font-body text-chocolate">
+    <!-- Navigation -->
+    <nav class="bg-cream shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <i data-feather="heart" class="text-blush mr-2"></i>
+                    <span class="font-heading text-2xl font-bold">Cake Basket</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="hover:text-gold transition">Home</a>
+                    <a href="#" class="hover:text-gold transition">Our Cakes</a>
+                    <a href="#" class="hover:text-gold transition">Occasions</a>
+                    <a href="#" class="hover:text-gold transition">About</a>
+                    <a href="#" class="hover:text-gold transition">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-blush/10">
+        <div class="absolute inset-0 bg-gradient-to-r from-cream/80 to-cream/30 z-10"></div>
+        <img src="https://images.pexels.com/photos/3713892/pexels-photo-3713892.jpeg" alt="Luxury Cake" class="absolute inset-0 w-full h-full object-cover">
+        <div class="container mx-auto px-6 z-20">
+            <div class="max-w-2xl">
+                <h1 class="font-heading text-5xl md:text-6xl font-bold mb-4">Baked with Love,<br>Served with Luxury</h1>
+                <p class="text-xl mb-8">Handcrafted artisan cakes that turn moments into cherished memories</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="bg-chocolate text-cream px-8 py-3 rounded-full font-medium hover:bg-gold hover:text-chocolate transition">Order Now</a>
+                    <a href="#" class="border-2 border-chocolate px-8 py-3 rounded-full font-medium hover:bg-blush/30 transition">View Cakes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-cream">
+        <div class="container mx-auto px-6">
+            <h2 class="font-heading text-3xl md:text-4xl text-center mb-16">Why Cake Basket</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition text-center">
+                    <div class="w-16 h-16 bg-blush/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="clock" class="text-gold"></i>
+                    </div>
+                    <h3 class="font-heading text-xl mb-2">Freshly Baked Daily</h3>
+                    <p>Our cakes are made fresh each morning using only the finest ingredients</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition text-center">
+                    <div class="w-16 h-16 bg-blush/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="star" class="text-gold"></i>
+                    </div>
+                    <h3 class="font-heading text-xl mb-2">Premium Ingredients</h3>
+                    <p>We source only the highest quality chocolates, fruits, and dairy</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition text-center">
+                    <div class="w-16 h-16 bg-blush/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="edit-3" class="text-gold"></i>
+                    </div>
+                    <h3 class="font-heading text-xl mb-2">Custom Designs</h3>
+                    <p>Your vision brought to life with our artistic cake designs</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition text-center">
+                    <div class="w-16 h-16 bg-blush/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="gift" class="text-gold"></i>
+                    </div>
+                    <h3 class="font-heading text-xl mb-2">Every Occasion</h3>
+                    <p>From birthdays to weddings, we have the perfect cake for you</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="font-heading text-3xl md:text-4xl text-center mb-16">Our Best Sellers</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cake 1 -->
+                <div class="group overflow-hidden rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.pexels.com/photos/30131920/pexels-photo-30131920.jpeg" alt="Red Velvet Cake" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute bottom-4 right-4 bg-gold text-chocolate px-3 py-1 rounded-full font-medium">$45</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl mb-2">Classic Red Velvet</h3>
+                        <p class="mb-4">Our signature cake with cream cheese frosting</p>
+                        <a href="#" class="text-gold font-medium hover:underline flex items-center">
+                            Order Now <i data-feather="arrow-right" class="ml-2 w-4"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Cake 2 -->
+                <div class="group overflow-hidden rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.pexels.com/photos/4109998/pexels-photo-4109998.jpeg" alt="Chocolate Fudge Cake" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute bottom-4 right-4 bg-gold text-chocolate px-3 py-1 rounded-full font-medium">$52</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl mb-2">Chocolate Fudge</h3>
+                        <p class="mb-4">Rich dark chocolate with fudge filling</p>
+                        <a href="#" class="text-gold font-medium hover:underline flex items-center">
+                            Order Now <i data-feather="arrow-right" class="ml-2 w-4"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Cake 3 -->
+                <div class="group overflow-hidden rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.pexels.com/photos/28377761/pexels-photo-28377761.jpeg" alt="Berry Cheesecake" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute bottom-4 right-4 bg-gold text-chocolate px-3 py-1 rounded-full font-medium">$48</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl mb-2">Berry Cheesecake</h3>
+                        <p class="mb-4">Creamy cheesecake with fresh berry topping</p>
+                        <a href="#" class="text-gold font-medium hover:underline flex items-center">
+                            Order Now <i data-feather="arrow-right" class="ml-2 w-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="py-20 bg-cream">
+        <div class="container mx-auto px-6">
+            <h2 class="font-heading text-3xl md:text-4xl text-center mb-16">Our Categories</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="#" class="group relative overflow-hidden rounded-lg h-48">
+                    <img src="https://images.pexels.com/photos/1857157/pexels-photo-1857157.jpeg" alt="Birthday Cakes" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-chocolate/70 to-transparent flex items-end p-6">
+                        <h3 class="font-heading text-2xl text-cream">Birthday Cakes</h3>
+                    </div>
+                </a>
+                <a href="#" class="group relative overflow-hidden rounded-lg h-48">
+                    <img src="https://images.pexels.com/photos/2531546/pexels-photo-2531546.jpeg" alt="Wedding Cakes" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-chocolate/70 to-transparent flex items-end p-6">
+                        <h3 class="font-heading text-2xl text-cream">Wedding Cakes</h3>
+                    </div>
+                </a>
+                <a href="#" class="group relative overflow-hidden rounded-lg h-48">
+                    <img src="https://images.pexels.com/photos/1414234/pexels-photo-1414234.jpeg" alt="Pastries" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-chocolate/70 to-transparent flex items-end p-6">
+                        <h3 class="font-heading text-2xl text-cream">Pastries</h3>
+                    </div>
+                </a>
+                <a href="#" class="group relative overflow-hidden rounded-lg h-48">
+                    <img src="https://images.pexels.com/photos/1682474/pexels-photo-1682474.jpeg" alt="Custom Cakes" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-chocolate/70 to-transparent flex items-end p-6">
+                        <h3 class="font-heading text-2xl text-cream">Custom Cakes</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="font-heading text-3xl md:text-4xl text-center mb-16">Sweet Words From Our Customers</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-cream p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="http://static.photos/people/200x200/1" alt="Customer" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-medium">Sarah Johnson</h4>
+                            <div class="flex text-gold">
+                                <i data-feather="star" class="w-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"The wedding cake was absolutely stunning and tasted even better than it looked! Our guests couldn't stop raving about it."</p>
+                </div>
+                <div class="bg-cream p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="http://static.photos/people/200x200/2" alt="Customer" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-medium">Michael Chen</h4>
+                            <div class="flex text-gold">
+                                <i data-feather="star" class="w-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"I've ordered birthday cakes from Cake Basket three years in a row now. They never disappoint with their creativity and flavor!"</p>
+                </div>
+                <div class="bg-cream p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="http://static.photos/people/200x200/3" alt="Customer" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-medium">Emily Rodriguez</h4>
+                            <div class="flex text-gold">
+                                <i data-feather="star" class="w-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"The custom cake for my daughter's graduation was exactly what we envisioned. The attention to detail was remarkable."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="py-16 bg-blush/20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="font-heading text-3xl md:text-4xl mb-6">Make Your Celebration Sweeter Today</h2>
+            <p class="max-w-2xl mx-auto mb-8">Let us create a masterpiece for your special occasion. Contact us to discuss your dream cake.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#" class="bg-chocolate text-cream px-8 py-3 rounded-full font-medium hover:bg-gold hover:text-chocolate transition">Order Online</a>
+                <a href="#" class="border-2 border-chocolate px-8 py-3 rounded-full font-medium hover:bg-blush/30 transition">Call Us</a>
+                <a href="#" class="border-2 border-chocolate px-8 py-3 rounded-full font-medium hover:bg-blush/30 transition">WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-chocolate text-cream py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i data-feather="heart" class="text-blush mr-2"></i>
+                        <span class="font-heading text-2xl font-bold">Cake Basket</span>
+                    </div>
+                    <p class="mb-4">Artisan bakers creating edible masterpieces since 2015. Every cake tells a story, and we'd love to help tell yours.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gold transition"><i data-feather="instagram"></i></a>
+                        <a href="#" class="hover:text-gold transition"><i data-feather="facebook"></i></a>
+                        <a href="#" class="hover:text-gold transition"><i data-feather="twitter"></i></a>
+                        <a href="#" class="hover:text-gold transition"><i data-feather="youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-heading text-xl mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gold transition">Home</a></li>
+                        <li><a href="#" class="hover:text-gold transition">Our Cakes</a></li>
+                        <li><a href="#" class="hover:text-gold transition">Occasions</a></li>
+                        <li><a href="#" class="hover:text-gold transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-gold transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-heading text-xl mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="mr-2 mt-1"></i>
+                            <span>123 Sweet Avenue, Dessert City</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="mr-2"></i>
+                            <span>(555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="mr-2"></i>
+                            <span>hello@cakebasket.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-heading text-xl mb-4">Opening Hours</h3>
+                    <ul class="space-y-2">
+                        <li class="flex justify-between">
+                            <span>Monday - Friday</span>
+                            <span>8am - 7pm</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Saturday</span>
+                            <span>9am - 6pm</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Sunday</span>
+                            <span>10am - 4pm</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-cream/20 mt-12 pt-8 text-center">
+                <p>&copy; 2023 Cake Basket. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
