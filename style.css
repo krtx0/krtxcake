@@ -4,6 +4,15 @@
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* Hide scrollbar everywhere */
+* {
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
 /* Base styles */
 html {
     scroll-behavior: smooth;
@@ -66,4 +75,5 @@ section {
     .hero-subheading {
         font-size: 1.1rem;
     }
+
 }
